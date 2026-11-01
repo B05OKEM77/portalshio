@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PASARAN TOGEL - PALING BERSAING & TERPERCAYA</title>
+    <title>SHIOKELINCI4D - Situs Hiburan Terpercaya</title>
     <style>
         * {
             box-sizing: border-box;
@@ -37,55 +37,44 @@
         .logo-box {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
             color: #d4af37;
             font-weight: bold;
-            font-size: 16px;
+            font-size: 15px;
+            text-shadow: 0 0 8px rgba(212, 175, 55, 0.6);
         }
         .logo-icon {
             color: #d4af37;
-            font-size: 20px;
+            font-size: 18px;
         }
         .btn-livechat {
             background: linear-gradient(180deg, #d4af37, #aa820a);
             color: #000;
-            padding: 10px 20px;
-            font-size: 13px;
+            padding: 8px 16px;
+            font-size: 12px;
             font-weight: bold;
-            border-radius: 8px;
+            border-radius: 6px;
             text-decoration: none;
             letter-spacing: 0.5px;
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
         }
 
         /* Banner Utama */
         .banner-card {
             border: 2px solid #d4af37;
             border-radius: 12px;
-            padding: 15px 10px;
+            padding: 12px 10px;
             text-align: center;
             background: radial-gradient(circle, #222 0%, #000 100%);
             margin-bottom: 15px;
-        }
-        .banner-title {
-            color: #d4af37;
-            font-size: 26px;
-            font-weight: 900;
-            letter-spacing: 1px;
-            margin-bottom: 5px;
-            text-transform: uppercase;
-        }
-        .banner-subtitle {
-            color: #fff;
-            font-size: 12px;
-            font-weight: bold;
-            letter-spacing: 1.5px;
-            margin-bottom: 15px;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
         }
         .banner-img-box {
             width: 100%;
             border-radius: 8px;
             overflow: hidden;
             border: 1px solid #d4af37;
+            background: #000;
         }
         .banner-img-box img {
             width: 100%;
@@ -104,7 +93,7 @@
             border: 1.5px solid #886514;
             border-radius: 8px;
             text-align: center;
-            padding: 10px 2px;
+            padding: 8px 2px;
             color: #d4af37;
             font-size: 9px;
             font-weight: bold;
@@ -113,14 +102,19 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 65px;
+            min-height: 60px;
+            transition: 0.3s;
+        }
+        .menu-item:hover {
+            box-shadow: 0 0 8px rgba(212, 175, 55, 0.8);
+            border-color: #d4af37;
         }
         .menu-icon {
             font-size: 14px;
             margin-bottom: 4px;
         }
 
-        /* Tombol LOGIN & DAFTAR */
+        /* Tombol LOGIN & DAFTAR dengan Efek Kilat */
         .auth-buttons {
             display: flex;
             gap: 10px;
@@ -136,6 +130,9 @@
             border-radius: 25px;
             text-decoration: none;
             font-size: 15px;
+            box-shadow: 0 0 10px rgba(229, 9, 20, 0.6);
+            position: relative;
+            overflow: hidden;
         }
         .btn-daftar {
             flex: 1;
@@ -147,36 +144,97 @@
             border-radius: 25px;
             text-decoration: none;
             font-size: 15px;
+            box-shadow: 0 0 12px rgba(212, 175, 55, 0.8);
+            position: relative;
+            overflow: hidden;
         }
 
-        /* Daftar Status Bank */
+        /* Animasi KILAT / Shine pada Tombol */
+        .btn-login::after, .btn-daftar::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -60%;
+            width: 20%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.4);
+            transform: rotate(30deg);
+            animation: flashLight 2.5s infinite;
+        }
+
+        @keyframes flashLight {
+            0% { left: -60%; }
+            20% { left: 120%; }
+            100% { left: 120%; }
+        }
+
+        /* Daftar Status Bank / Pembayaran */
         .bank-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 10px;
+            padding-bottom: 20px;
         }
         .bank-card {
             background: #ffffff;
-            border-radius: 10px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 10px 12px;
+            box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
         }
-        .status-badge {
-            background: #008000;
+        
+        /* Indikator Lampu Bulat dengan EFEK KILAT (Glow & Pulse) */
+        .status-indicator {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: #006400;
             color: white;
-            padding: 4px 10px;
-            font-size: 10px;
+            padding: 4px 8px;
+            font-size: 9px;
             font-weight: bold;
             border-radius: 12px;
         }
-        .bank-name {
-            font-weight: bold;
-            font-size: 13px;
-            color: #002b66;
-            font-style: italic;
+        .dot {
+            width: 8px;
+            height: 8px;
+            background-color: #00ff00;
+            border-radius: 50%;
+            animation: pulseGlow 1.2s infinite alternate;
         }
+
+        /* Animasi Kedip / Cahaya Lampu Bank */
+        @keyframes pulseGlow {
+            0% {
+                background-color: #00ff00;
+                box-shadow: 0 0 2px #00ff00, 0 0 4px #00ff00;
+                transform: scale(0.9);
+            }
+            100% {
+                background-color: #55ff55;
+                box-shadow: 0 0 8px #00ff00, 0 0 12px #00ff00, 0 0 16px #00ff00;
+                transform: scale(1.15);
+            }
+        }
+
+        /* Gaya Teks Nama Bank */
+        .bank-name {
+            font-weight: 900;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+        .bca { color: #006699; font-style: italic; }
+        .mandiri { color: #003366; }
+        .bri { color: #003399; font-style: italic; }
+        .bni { color: #f26522; font-style: italic; }
+        .danamon { color: #003399; font-style: italic; }
+        .cimb { color: red; font-style: italic; }
+        .permata { color: #006633; font-style: italic; }
+        .ovo { color: #4c2882; font-style: italic; }
+        .gopay { color: #00816a; }
+        .dana { color: #0086fb; font-style: italic; }
     </style>
 </head>
 <body>
@@ -185,19 +243,16 @@
         <!-- Header Navigasi -->
         <header>
             <div class="logo-box">
-                <span class="logo-icon">👑</span>
+                <span class="logo-icon">🐰</span>
                 <span>SHIOKELINCI4D</span>
             </div>
             <a href="https://shiokelinci4d-opps.com/register?referral_code=oce33" class="btn-livechat" target="_blank">LIVE CHAT</a>
         </header>
 
-        <!-- Banner Utama -->
+        <!-- Banner Utama Berisi Gambar -->
         <div class="banner-card">
-            <div class="banner-title">PASARAN TOGEL</div>
-            <div class="banner-subtitle">PALING BERSAING & TERPERCAYA</div>
             <div class="banner-img-box">
-                <!-- Anda bisa mengganti URL gambar ini dengan gambar banner Anda sendiri -->
-                <img src="banner.jpg" alt="Banner Pasaran Togel" onerror="this.src='https://via.placeholder.com/400x200/111/d4af37?text=MENANG+BERAPA+PUN+PASTI+DIBAYAR';">
+                <img src="banner.jpg" alt="SHIOKELINCI4D Banner">
             </div>
         </div>
 
@@ -231,47 +286,47 @@
             <a href="https://shiokelinci4d-opps.com/register?referral_code=oce33" class="btn-daftar" target="_blank">DAFTAR</a>
         </div>
 
-        <!-- Daftar Status Pembayaran / Bank -->
+        <!-- Daftar Status Bank / Pembayaran -->
         <div class="bank-grid">
             <div class="bank-card">
-                <span class="status-badge">ONLINE</span>
-                <span class="bank-name">BCA</span>
+                <div class="status-indicator"><span class="dot"></span>ONLINE</div>
+                <span class="bank-name bca">BCA</span>
             </div>
             <div class="bank-card">
-                <span class="status-badge">ONLINE</span>
-                <span class="bank-name">mandırı</span>
+                <div class="status-indicator"><span class="dot"></span>ONLINE</div>
+                <span class="bank-name mandiri">mandırı</span>
             </div>
             <div class="bank-card">
-                <span class="status-badge">ONLINE</span>
-                <span class="bank-name">BRI</span>
+                <div class="status-indicator"><span class="dot"></span>ONLINE</div>
+                <span class="bank-name bri">BRI</span>
             </div>
             <div class="bank-card">
-                <span class="status-badge">ONLINE</span>
-                <span class="bank-name">BNI</span>
+                <div class="status-indicator"><span class="dot">NIP</span>ONLINE</div>
+                <span class="bank-name bni">BNI</span>
             </div>
             <div class="bank-card">
-                <span class="status-badge">ONLINE</span>
-                <span class="bank-name">Danamon</span>
+                <div class="status-indicator"><span class="dot"></span>ONLINE</div>
+                <span class="bank-name danamon">Danamon</span>
             </div>
             <div class="bank-card">
-                <span class="status-badge">ONLINE</span>
-                <span class="bank-name">CIMB</span>
+                <div class="status-indicator"><span class="dot"></span>ONLINE</div>
+                <span class="bank-name cimb">CIMB</span>
             </div>
             <div class="bank-card">
-                <span class="status-badge">ONLINE</span>
-                <span class="bank-name">Permata</span>
+                <div class="status-indicator"><span class="dot"></span>ONLINE</div>
+                <span class="bank-name permata">Permata</span>
             </div>
             <div class="bank-card">
-                <span class="status-badge">ONLINE</span>
-                <span class="bank-name">OVO</span>
+                <div class="status-indicator"><span class="dot"></span>ONLINE</div>
+                <span class="bank-name ovo">OVO</span>
             </div>
             <div class="bank-card">
-                <span class="status-badge">ONLINE</span>
-                <span class="bank-name">gopay</span>
+                <div class="status-indicator"><span class="dot"></span>ONLINE</div>
+                <span class="bank-name gopay">gopay</span>
             </div>
             <div class="bank-card">
-                <span class="status-badge">ONLINE</span>
-                <span class="bank-name">DANA</span>
+                <div class="status-indicator"><span class="dot"></span>ONLINE</div>
+                <span class="bank-name dana">DANA</span>
             </div>
         </div>
 
